@@ -1,0 +1,8 @@
+[user]
+	name = namusyaka
+	email = namusyaka@gmail.com
+[core]
+	editor = /usr/bin/vim
+[color]
+  ui = true
+  diff = true
