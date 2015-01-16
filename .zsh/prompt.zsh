@@ -29,6 +29,22 @@ function make-default-prompt {
   echo "$result⚡  "
 }
 
+function get-chruby-version {
+  local _ruby
+  if [[ $(chruby | grep -c \*) -eq 1 ]]; then
+    _ruby="$(chruby | grep \* | tr -d '* ')"
+    echo ${_ruby}
+  else
+    echo "system"
+  fi
+}
+
+function make-right-prompt {
+  local result
+  result="%{\e[38;5;208m%}[`get-chruby-version`]%{\e[m%}"
+  echo $result
+}
+
 setopt prompt_subst
 PROMPT='`make-default-prompt`'
 PROMPT2="%{${fg[cyan]}%}%_%%%{${reset_color}%} "
@@ -40,5 +56,6 @@ fi
 precmd() {
   echo -ne "\033]0;${USER}@${HOST%%.*}:${PWD}\007"
   LANG=en_US.UTF-8 vcs_info
+  RPROMPT="`make-right-prompt`"
   [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
