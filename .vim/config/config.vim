@@ -1,4 +1,12 @@
-nnoremap <S-n> :set number<CR>
+function g:toggle_line_number()
+  if &number
+    setlocal nonumber
+  else
+    setlocal number
+  endif
+endfunction
+
+nnoremap <S-n> :call g:toggle_line_number()<CR>
 nnoremap <S-p> :set paste<CR>
 
 autocmd FileType ruby :map <C-n> <ESC>:!ruby -cW %<CR>
