@@ -6,6 +6,7 @@ function g:toggle_line_number()
   endif
 endfunction
 
+call g:toggle_line_number()
 nnoremap <S-n> :call g:toggle_line_number()<CR>
 nnoremap <S-p> :set paste<CR>
 vnoremap <silent> <C-p> "0p<CR>
