@@ -4,5 +4,5 @@
 [core]
 	editor = /usr/bin/vim
 [color]
-  ui = true
-  diff = true
+	ui = true
+	diff = true
