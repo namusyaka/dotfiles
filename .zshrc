@@ -1,4 +1,4 @@
-files=(alias color completion prompt)
+files=(alias color completion prompt command)
 for file in $files; do
   source $HOME/.zsh/$file.zsh
 done
