@@ -6,3 +6,8 @@
 [color]
 	ui = true
 	diff = true
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	ci = commit
