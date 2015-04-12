@@ -18,6 +18,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=$HOME/bin/cs:$PATH
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:~/bin
 if [ -x `which nodebrew` ]; then
   export PATH=$PATH:$HOME/.nodebrew/current/bin
   export NODE_PATH=`npm root -g`
