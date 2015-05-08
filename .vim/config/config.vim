@@ -21,3 +21,4 @@ let g:user_zen_settings = {
 
 highlight clear SignColumn
 let g:SimpleJsIndenter_BriefMode = 1
+au BufNewFile,BufRead *.pig setf pig

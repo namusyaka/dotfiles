@@ -6,6 +6,7 @@ endif
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'vim-scripts/pig.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'https://github.com/Lokaltog/powerline.git'
