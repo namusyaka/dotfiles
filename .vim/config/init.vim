@@ -6,6 +6,8 @@ endif
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+NeoBundle 'fatih/vim-go'
+NeoBundle 'hashivim/vim-terraform'
 NeoBundle 'vim-scripts/pig.vim'
 NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'alpaca-tc/alpaca_powertabline'
@@ -18,6 +20,7 @@ NeoBundle 'jiangmiao/simple-javascript-indenter'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle "elixir-lang/vim-elixir"
+NeoBundle "rhysd/vim-crystal"
 NeoBundle "kana/vim-smartinput"
 NeoBundle "tpope/vim-endwise"
 NeoBundle 'Shougo/neocomplcache'

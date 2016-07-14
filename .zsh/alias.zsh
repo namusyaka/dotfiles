@@ -19,3 +19,5 @@ alias upppp='cd ../../../../'
 
 alias tmux-copy='tmux save-buffer - | reattach-to-user-namespace pbcopy'
 alias tree='tree -N'
+alias tf='terraform'
+alias dynamo_local='java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb'

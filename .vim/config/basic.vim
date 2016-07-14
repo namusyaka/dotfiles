@@ -15,3 +15,5 @@ set t_Co=256
 
 au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 au BufNewFile,BufRead,BufReadPre *.ex set filetype=elixir
+au BufNewFile,BufRead,BufReadPre *.ru set filetype=ruby
+au BufNewFile,BufRead,BufReadPre *.rabl set filetype=ruby
