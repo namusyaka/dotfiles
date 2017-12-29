@@ -29,6 +29,16 @@ function make-default-prompt {
   echo "$result⚡  "
 }
 
+function get-rbenv-version {
+  local _ruby
+  if [[ $(rbenv versions | grep -c \*) -eq 1 ]]; then
+    _ruby="$(rbenv version | cut -f1 -d' ')"
+    echo ${_ruby}
+  else
+    echo "system"
+  fi
+}
+
 function get-chruby-version {
   local _ruby
   if [[ $(chruby | grep -c \*) -eq 1 ]]; then
@@ -41,7 +51,7 @@ function get-chruby-version {
 
 function make-right-prompt {
   local result
-  result="%{\e[38;5;208m%}[`get-chruby-version`]%{\e[m%}"
+  result="%{\e[38;5;208m%}[`get-rbenv-version`]%{\e[m%}"
   echo $result
 }
 

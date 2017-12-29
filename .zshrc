@@ -22,8 +22,8 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:~/bin
 export PATH=$PATH:$HOME/dev/aws/.terraform
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-export GOROOT=/usr/local/Cellar/go/1.5.2/libexec
 if [ -x `which nodebrew` ]; then
   export PATH=$PATH:$HOME/.nodebrew/current/bin
   export NODE_PATH=`npm root -g`
 fi
+export XDG_CONFIG_HOME="$HOME/.config"

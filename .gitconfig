@@ -1,13 +1,19 @@
 [user]
-	name = namusyaka
-	email = namusyaka@gmail.com
+  name = namusyaka
+  email = namusyaka@gmail.com
 [core]
-	editor = /usr/bin/vim
+  editor = /usr/local/bin/nvim
 [color]
-	ui = true
-	diff = true
+  ui = true
+  diff = true
 [alias]
-	co = checkout
-	st = status
-	br = branch
-	ci = commit
+  co = checkout
+  st = status
+  br = branch
+  ci = commit
+  change = codereview change
+  gofmt = codereview gofmt
+  mail = codereview mail
+  pending = codereview pending
+  submit = codereview submit
+  sync = codereview sync
