@@ -109,6 +109,7 @@ call deoplete#enable()
 " deoplete-go
 let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+let g:deoplete#sources = {}
 let g:deoplete#sources.go = ['buffer', 'go']
 
 " status line
