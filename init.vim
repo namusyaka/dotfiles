@@ -51,6 +51,7 @@ set backspace=indent,eol,start
 " togglable
 nnoremap <silent> <S-n> :<C-u>setlocal number!<CR>
 nnoremap <silent> <S-p> :<C-u>setlocal paste!<CR>
+set number
 
 call plug#begin('~/.vim/plugged')
 
